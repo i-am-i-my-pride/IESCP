@@ -14,7 +14,7 @@
 </div>
 ```
 
-* [效果](https://baidu.com/)
+* [效果](http://localhost:8080/health/page/components/iss-panel.html)
 
 >示例2 | 不带标题
 

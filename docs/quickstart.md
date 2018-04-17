@@ -1,17 +1,3 @@
-![logo](_media/logo.png)
-
-# IESCP 前端开发框架 <small>1.1.10</small>
-
->  IESCP前端开发框架，使用了Vue与SeaJs两个开源框架。
-
-* 基于MVVM实现数据驱动页面及模块化开发
-* 一个基于保险业务的开源前端框架
-* 可自定义主题皮肤
-
-[DownLoad](https://baidu.com/)
-[立即开始](#IESCP)
-
-
 # IESCP
 
 `IESCP`，全称为`ISoftstone Enterprise Service Cloud Platform`，软通企业服务云平台。是软通动力保险事业部专门开发的一套j2ee应用开发平台，支持传统的B/S架构，以及分布式架构。从前端、中间接入层，到后端，专门针对保险业务场景进行优化，能更好的满足于保险行业系统对快速、稳定、高效、安全的要求
@@ -28,7 +14,7 @@
 </div>
 ```
 
-* [效果](https://baidu.com/)
+* [效果](http://localhost:8080/health/page/components/iss-panel.html)
 
 >示例2 | 不带标题
 
