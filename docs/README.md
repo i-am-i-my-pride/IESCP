@@ -2,6 +2,126 @@
 
 `IESCP`，全称为`ISoftstone Enterprise Service Cloud Platform`，软通企业服务云平台。是软通动力保险事业部专门开发的一套j2ee应用开发平台，支持传统的B/S架构，以及分布式架构。从前端、中间接入层，到后端，专门针对保险业务场景进行优化，能更好的满足于保险行业系统对快速、稳定、高效、安全的要求
 
+## 菜单栏配置
+
+菜单栏直接通过后台配置，通过 `method:menuAction.getMenuData` 返回给前台，即可自动加载菜单栏，返回的数据格式如下：
+
+```JSON
+{
+	"status": "0",
+	"data": {
+		"menuList": [ {
+			"label" : "UI示例",
+			"url" : "",
+			"icon" : "",
+			"subMenu" : [ {
+				"label" : "列表示例",
+				"url" : "page/demo/demo-list.html",
+				"icon" : "",
+				"subMenu" : []
+			}, {
+				"label" : "表单示例",
+				"url" : "page/demo/demo-form.html",
+				"icon" : "",
+				"subMenu" : []
+			}, {
+				"label" : "选项卡示例",
+				"url" : "page/demo/demo-tabs.html",
+				"icon" : "",
+				"subMenu" : []
+	  		} ]
+	  	}, {
+			"label" : "服务管理",
+			"url" : "",
+			"icon" : "",
+			"subMenu" : [  {
+				"label" : "服务机构管理",
+				"url" : "page/health/service-dpt.html",
+				"icon" : "",
+				"subMenu" : []
+		  	}, {
+				"label" : "服务项目管理",
+				"url" : "page/health/service-proj.html",
+				"icon" : "",
+				"subMenu" : []
+		  	} ]
+	  	}, {
+			"label" : "客户管理",
+			"url" : "",
+			"icon" : "",
+			"subMenu" : [ {
+				"label" : "客户服务管理",
+				"url" : "page/health/cus-service.html",
+				"icon" : "",
+				"subMenu" : []
+		  	}, {
+				"label" : "客户挂号记录",
+				"url" : "page/health/cus-register.html",
+				"icon" : "",
+				"subMenu" : []
+		  	}, {
+		  		"label" : "客户二次诊断",
+		  		"url" : "page/health/cus-second.html",
+		  		"icon" : "",
+		  		"subMenu" : []
+		  	}, {
+		  		"label" : "客户体检",
+		  		"url" : "page/health/cus-inspect.html",
+		  		"icon" : "",
+		  		"subMenu" : []
+		  	}, {
+		  		"label" : "客户问诊记录",
+		  		"url" : "page/health/cus-inquiry.html",
+		  		"icon" : "",
+		  		"subMenu" : []
+		  	}, {
+		  		"label" : "客户重疾绿通记录",
+		  		"url" : "page/health/cus-stricken.html",
+		  		"icon" : "",
+		  		"subMenu" : []
+		  	}, {
+		  		"label" : "客户海外转诊",
+		  		"url" : "page/health/cus-abroad.html",
+		  		"icon" : "",
+		  		"subMenu" : []
+		  	} ]
+	  	}, {
+	  		"label" : "合约管理",
+	  		"url" : "",
+	  		"icon" : "",
+	  		"subMenu" : [ {
+		  		"label" : "合约管理",
+		  		"url" : "page/health/contract.html",
+		  		"icon" : "",
+		  		"subMenu" : []
+		  	} ]
+	  	}, {
+	  		"label" : "洁牙管理",
+	  		"url" : "",
+	  		"icon" : "",
+	  		"subMenu" : [ {
+	  			"label" : "洁牙管理",
+	  			"url" : "page/health/card.html",
+	  			"icon" : "",
+	  			"subMenu" : []
+	  		} ]
+	  	}, {
+	  		"label" : "系统设置",
+	  		"url" : "",
+	  		"icon" : "",
+	  		"subMenu" : [ {
+	  			"label" : "个人资料",
+	  			"url" : "page/info.html",
+	  			"icon" : "",
+	  			"subMenu" : []
+	  		} ]
+	  	} ]
+	}
+}
+```
+
+* [效果](http://localhost:8080/health/page/components/main_menu.html)
+
 ## iss-panel面板组件
 
 >示例1 | 带标题
