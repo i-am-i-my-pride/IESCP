@@ -120,7 +120,7 @@
 }
 ```
 
-* [效果](http://localhost:8080/health/)
+* [效果]()
 
 ## iss-panel面板组件
 
