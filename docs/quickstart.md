@@ -14,7 +14,7 @@
 </div>
 ```
 
-* [效果](page/components/iss-panel1.html)
+* [效果](http://localhost:8080/health/page/components/iss-panel1.html)
 
 >示例2 | 不带标题
 
@@ -26,7 +26,7 @@
 </div>
 ```
 
-* [效果](page/components/iss-panel2.html)
+* [效果](http://localhost:8080/health/page/components/iss-panel2.html)
 
 >示例3 | 副标题区的使用
 
