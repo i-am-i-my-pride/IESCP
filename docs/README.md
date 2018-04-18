@@ -604,14 +604,15 @@ define(function (require, exports, module) {
 <div v-cloak id="pageDiv">
     <div is="iss-card" title="iss-list列表组件">
         <table is="iss-list" :datasource="rowsData" >
-	    	<tbody>
-	    		<tr v-for="(row, idx) of rowsData">
-	    			<td><input is="iss-input" style="width: 439px;" v-model="row.CProCode" /></td>
-	    			<td><input is="iss-input" style="width: 439px;" v-model="row.CProjectName" /></td>
-	    		</tr>
-	    	</tbody>
-	    </table>
-	</div>
+            <tbody>
+                <tr v-for="(row, idx) of rowsData">
+                    <td><input is="iss-input" style="width: 439px;" v-model="row.CProCode" /></td>
+                    <td><input is="iss-input" style="width: 439px;" v-model="row.CProjectName" /></td>
+                    <td><input is="iss-input" style="width: 439px;" v-model="row.CUrl" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 ```
 
@@ -682,21 +683,23 @@ define(function (require, exports, module) {
 <div v-cloak id="pageDiv">
     <div is="iss-card" title="表单列表综合示例">
         <table is="iss-list"  ref="dpt" :datasource="rowsData" :gotopage="list" >
-		<thead>
-			<tr>
-				<th rowspan="2" class="index selector more">全选</th>
-				<th rowspan="2" style="width: 439px;">项目编码</th>
-				<th rowspan="2" style="width: 439px;">项目名称</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr v-for="(row, idx) of rowsData">
-				<td is="iss-index" v-model="row._select">{{idx + 1}}</td>
-				<td><input is="iss-input" style="width: 439px;" v-model="row.CProCode" /></td>
-				<td><input is="iss-input" style="width: 439px;" v-model="row.CProjectName" /></td>
-			</tr>
-		</tbody>
-	</table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="index selector more">全选</th>
+                <th rowspan="2" style="width: 400px;">项目编码</th>
+                <th rowspan="2" style="width: 400px;">项目名称</th>
+                <th rowspan="2" style="width: 400px;">url</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(row, idx) of rowsData">
+                <td is="iss-index" v-model="row._select">{{idx + 1}}</td>
+                <td is="iss-index" v-model="row._select"><input is="iss-input" style="width: 400px;" v-model="row.CProCode" /></td>
+                <td is="iss-index" v-model="row._select"><input is="iss-input" style="width: 400px;" v-model="row.CProjectName" /></td>
+                <td is="iss-index" v-model="row._select"><input is="iss-input" style="width: 470px;"  v-model="row.CUrl" /></td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 </div>
 ```
