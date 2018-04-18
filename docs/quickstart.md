@@ -545,6 +545,31 @@ define(function (require, exports, module) {
 			var vm = new Vue({
 				el: "#pageDiv",
 				data: {
+					rowsData: [ {
+                		CProCode: "", //项目编码
+                		CProjectName: "", //项目名称
+                		CIcon: "", //图标
+                		CUrl: "", //URL
+                		CDeductionWay: "", //扣减方式(01-次数，02-金额)
+                		NNum: "", //次数
+                		NAmt: "", //金额
+                		TBgnTime: "", //有效起期
+                		TEngTime: "", //有效止期
+                		NPrice: "", //售价
+                		CSex: "", //适用性别
+                		NMinAge: "", //适用最小年龄
+                		NMaxAge: "", //适用最大年龄 
+                		CSynopsis: "", //简介
+                		NCostPrice: "", //成本价
+                		CEnabledState: null, //启用标志(0禁用，1启用)
+                		CIssueStatus: null, //启用标志(0未发布，1已发布)
+                		CCrtCde: "", //创建人员
+                		TCrtTm: "", //创建时间
+                		CUpdCde: "", //修改人员
+                		TUpdTm: "", //修改时间
+                		CType: "", // 类型
+                		COrganCode: "" // 供应商
+                	} ],
 				},
 				mounted: function() { // 页面加载后,vue挂载完成开始查询数据
                 	this.$nextTick( function () {
@@ -598,6 +623,31 @@ define(function (require, exports, module) {
 			var vm = new Vue({
 				el: "#pageDiv",
 				data: {
+					rowsData: [ {
+                		CProCode: "", //项目编码
+                		CProjectName: "", //项目名称
+                		CIcon: "", //图标
+                		CUrl: "", //URL
+                		CDeductionWay: "", //扣减方式(01-次数，02-金额)
+                		NNum: "", //次数
+                		NAmt: "", //金额
+                		TBgnTime: "", //有效起期
+                		TEngTime: "", //有效止期
+                		NPrice: "", //售价
+                		CSex: "", //适用性别
+                		NMinAge: "", //适用最小年龄
+                		NMaxAge: "", //适用最大年龄 
+                		CSynopsis: "", //简介
+                		NCostPrice: "", //成本价
+                		CEnabledState: null, //启用标志(0禁用，1启用)
+                		CIssueStatus: null, //启用标志(0未发布，1已发布)
+                		CCrtCde: "", //创建人员
+                		TCrtTm: "", //创建时间
+                		CUpdCde: "", //修改人员
+                		TUpdTm: "", //修改时间
+                		CType: "", // 类型
+                		COrganCode: "" // 供应商
+                	} ],
 				},
 				mounted: function() { // 页面加载后,vue挂载完成开始查询数据
                 	this.$nextTick( function () {
@@ -659,6 +709,31 @@ define(function (require, exports, module) {
 			var vm = new Vue({
 				el: "#pageDiv",
 				data: {
+					rowsData: [ {
+                		CProCode: "", //项目编码
+                		CProjectName: "", //项目名称
+                		CIcon: "", //图标
+                		CUrl: "", //URL
+                		CDeductionWay: "", //扣减方式(01-次数，02-金额)
+                		NNum: "", //次数
+                		NAmt: "", //金额
+                		TBgnTime: "", //有效起期
+                		TEngTime: "", //有效止期
+                		NPrice: "", //售价
+                		CSex: "", //适用性别
+                		NMinAge: "", //适用最小年龄
+                		NMaxAge: "", //适用最大年龄 
+                		CSynopsis: "", //简介
+                		NCostPrice: "", //成本价
+                		CEnabledState: null, //启用标志(0禁用，1启用)
+                		CIssueStatus: null, //启用标志(0未发布，1已发布)
+                		CCrtCde: "", //创建人员
+                		TCrtTm: "", //创建时间
+                		CUpdCde: "", //修改人员
+                		TUpdTm: "", //修改时间
+                		CType: "", // 类型
+                		COrganCode: "" // 供应商
+                	} ],
 				},
 				mounted: function() { // 页面加载后,vue挂载完成开始查询数据
                 	this.$nextTick( function () {
