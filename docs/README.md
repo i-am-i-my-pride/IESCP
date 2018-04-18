@@ -685,7 +685,7 @@ define(function (require, exports, module) {
 });
 ```
 
-* [效果](http://localhost:8080/health/page/components/iss-list.html)
+* [效果](http://localhost:8080/health/page/components/iss-zonghe.html)
 
 ## iss-shuttle穿梭框组件
 
