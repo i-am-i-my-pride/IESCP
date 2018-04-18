@@ -968,3 +968,64 @@ define(function (require, exports, module) {
 ```
 
 * [效果](http://localhost:8080/health/page/components/iss-shuttle.html)
+
+## layer
+
+>示例 
+
+* 代码
+
+```HTML
+<div v-cloak id="pageDiv">
+	<div is="iss-card" title="layer">
+		<input is="iss-input" style="width:80px;cursor:pointer;color:#41cdbb"
+			class="readonly" value="请点击选择" @click="getBBren" /><input
+			is="iss-input" style="width:145px;" v-model="BBcheckbox1" />
+		<div is="iss-card" id="BBren" class="dialog">
+			<span v-for="(items,index) of BBcheckbox"> &nbsp;&nbsp; <input
+				is="iss-tag" :title="items" :value="items" v-model="BBcheckbox1" />
+			</span>
+		</div>
+	</div>
+</div>
+```
+
+```JS
+;"use strict";
+
+define( function(require, exports, module) {
+	module.exports = {
+		init : function() {
+			var vm = new Vue( {
+                el: "#pageDiv",
+                data: {
+                	BBcheckbox:["张三丰","刘德华","陈奕迅","王健林","马云"],
+                	BBcheckbox1:""                                  
+                },
+                mounted: function() {},    			
+    			methods: {
+    				getBBren: function() { 
+    					layer.open( {
+							type: 1,
+							title: "我是一个弹窗标题",
+							area: ["700px", "440px"],
+							content: $("#BBren"),
+							shadeClose: false,
+							scrollbar: false,
+							btn: [ "确定", "取消" ],
+							btn1: function(index,layero) {
+								layer.close(index);
+							},
+							end: function() {
+								layer.msg('完成操作', {icon: 1});  // 不是必需
+							}
+						} );
+    				}    				
+    			}
+            } );
+		}
+	};
+} );
+```
+
+* [效果](http://localhost:8080/health/page/components/layer.html)
