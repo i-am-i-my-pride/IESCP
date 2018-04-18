@@ -14,7 +14,7 @@
 </div>
 ```
 
-* [效果](issapi.appCxtPath+page/components/iss-panel1.html)
+* [效果](page/components/iss-panel1.html)
 
 >示例2 | 不带标题
 
