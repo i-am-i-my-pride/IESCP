@@ -1029,3 +1029,64 @@ define( function(require, exports, module) {
 ```
 
 * [效果](http://localhost:8080/health/page/components/layer.html)
+
+## ztree
+
+>示例 
+
+* 代码
+
+```HTML
+<div v-cloak id="pageDiv">
+	<div is="iss-card" title="ztree 树">
+		<div style="width: 20%; float: left;">
+			<ul id="treeDemo" class="ztree"></ul>
+		</div>
+	</div>
+</div>
+```
+
+```JS
+;"use strict";
+define(function (require, exports, module) {
+	module.exports = {
+		init: function () {
+			var zTree;
+			var vm = new Vue({
+				el: "#pageDiv",
+				data: {
+					rowsData: [ 
+                		{id:1, pId:0, name:"董事长", open:true},
+                        {id:101, pId:1, name:"副董1"},
+                        {id:102, pId:1, name:"副董2"},
+                        {id:103, pId:1, name:"副董3"},
+                        {id:10101, pId:101, name:"行政部"},
+                        {id:10102, pId:101, name:"财务部"},            
+                        {id:10103, pId:101, name:"业务部"},
+                        {id:10104, pId:101, name:"生产部"},
+                        {id:10201, pId:102, name:"后勤部"},
+                        {id:10202, pId:102, name:"人事部"},
+                        {id:10203, pId:102, name:"技术部"}
+                	]
+				},
+				methods: {}
+			});
+			var setting = {
+				data: {
+					simpleData: {
+						enable: true, //表示使用简单数据模式
+					}
+				},
+				callback: { //返回函数; 根据需求选择合适的监听事件
+					onClick: function (treeId, treeNode) { // onClick展开树
+						var zTree = $.fn.zTree.getZTreeObj("tree");
+					}
+				}
+			};
+			$.fn.zTree.init($("#treeDemo"), setting, vm.rowsData);
+		}
+	};
+});
+```
+
+* [效果](http://localhost:8080/health/page/components/ztree.html)
