@@ -956,11 +956,7 @@ define(function (require, exports, module) {
 					toData: [], //穿梭表模拟目的数据
 				},
 				mounted: function () {},
-				methods: {
-					shuttle: function () {
-						issapi.open('page/demo/iss_shuttle.html')
-					}
-				}
+				methods: {}
 			});
 		}
 	};
