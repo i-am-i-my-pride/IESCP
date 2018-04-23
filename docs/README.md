@@ -134,7 +134,7 @@
 </div>
 ```
 
-* [效果](http://localhost:8080/demo/page/components/iss-panel1.html)
+* [效果](http://localhost:8080/demo/page/components/iss-panel11.html)
 
 >示例2 | 不带标题
 
