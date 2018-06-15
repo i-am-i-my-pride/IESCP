@@ -39,13 +39,13 @@
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (html) {
-            var url = 'https://raw.githubusercontent.com/i-am-i-my-pride/IESCP/master/' + vm.route.file
+            var url = 'https://www.baidu.com/' + vm.route.file
             var editHtml = '[:back: 返回框架首页](' + url + ')\n'
 
             return editHtml
               + html
               + '\n\n----\n\n'
-              + 'Last modified {docsify-updated} '
+              + '已到底部 '
               + editHtml
           })
         }
