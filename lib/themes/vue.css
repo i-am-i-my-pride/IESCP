@@ -232,7 +232,7 @@ main.hidden {
 }
 
 .anchor span {
-    color: #34495e
+    color: red
 }
 
 .anchor:hover {
